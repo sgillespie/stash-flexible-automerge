@@ -29,7 +29,7 @@
   <repository-hook name="Flexible Automerge Post Receive Hook"
                    i18n-name-key="flexible-automerge-post-receive-hook.name"
                    key="flexible-automerge-post-receive-hook"
-                   class="com.github.sgillespie.hook.FlexibleAutomergePostReceiveHook">
+                   class="com.github.sgillespie.stash.hook.FlexibleAutomergePostReceiveHook">
     <description key="flexible-automerge-post-receive-hook.description">The Flexible Automerge Post Receive Hook Plugin</description>
   </repository-hook>
 </atlassian-plugin>
