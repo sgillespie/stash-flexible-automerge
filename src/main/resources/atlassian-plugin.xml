@@ -8,23 +8,28 @@
     <param name="plugin-icon">images/pluginIcon.png</param>
     <param name="plugin-logo">images/pluginLogo.png</param>
   </plugin-info>
-  <!-- add our i18n resource -->
+
   <resource type="i18n" name="i18n" location="stash-flexible-automerge"/>
-  <!-- add our web resources -->
+
   <web-resource key="stash-flexible-automerge-resources" name="stash-flexible-automerge Web Resources">
     <dependency>com.atlassian.auiplugin:ajs</dependency>
-    <resource type="download" name="stash-flexible-automerge.css" location="/css/stash-flexible-automerge.css"/>
-    <resource type="download" name="stash-flexible-automerge.js" location="/js/stash-flexible-automerge.js"/>
-    <resource type="download" name="images/" location="/images"/>
+    <resource type="download"
+              name="stash-flexible-automerge.css"
+              location="/css/stash-flexible-automerge.css"/>
+    <resource type="download"
+              name="stash-flexible-automerge.js"
+              location="/js/stash-flexible-automerge.js"/>
+    <resource type="download"
+              name="images/"
+              location="/images"/>
     <context>stash-flexible-automerge</context>
   </web-resource>
-  <!-- publish our component -->
-  <component key="myPluginComponent" class="com.github.sgillespie.MyPluginComponentImpl" public="true">
-    <interface>com.github.sgillespie.MyPluginComponent</interface>
-  </component>
-  <!-- import from the product container -->
+
   <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties"/>
-  <repository-hook name="Flexible Automerge Post Receive Hook" i18n-name-key="flexible-automerge-post-receive-hook.name" key="flexible-automerge-post-receive-hook" class="com.github.sgillespie.hook.FlexibleAutomergePostReceiveHook">
+  <repository-hook name="Flexible Automerge Post Receive Hook"
+                   i18n-name-key="flexible-automerge-post-receive-hook.name"
+                   key="flexible-automerge-post-receive-hook"
+                   class="com.github.sgillespie.hook.FlexibleAutomergePostReceiveHook">
     <description key="flexible-automerge-post-receive-hook.description">The Flexible Automerge Post Receive Hook Plugin</description>
   </repository-hook>
 </atlassian-plugin>
