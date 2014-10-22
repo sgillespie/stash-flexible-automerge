@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class HierarchicalBranchModel {
-    private Collection<HierarchicalBranch> branches = new ArrayList<HierarchicalBranch>();
+    private Collection<HierarchicalBranch> branches = new ArrayList<>();
 
     public Collection<HierarchicalBranch> getBranches() {
         return branches;

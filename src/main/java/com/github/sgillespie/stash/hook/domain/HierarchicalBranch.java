@@ -8,11 +8,10 @@ import java.util.Collection;
 
 public class HierarchicalBranch implements Branch {
     private final Branch branch;
-    private Collection<HierarchicalBranch> parents;
+    private final Collection<HierarchicalBranch> parents = new ArrayList<>();
 
     public HierarchicalBranch(Branch branch) {
         this.branch = branch;
-        this.parents = new ArrayList<HierarchicalBranch>();
     }
 
     @Override
